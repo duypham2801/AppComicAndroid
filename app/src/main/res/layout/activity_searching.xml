@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.MainInterface">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#513619"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/edtSearch"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginRight="80dp"
+            android:background="@drawable/bg_edit"
+            android:gravity="center"
+            android:hint="Nhập tên truyện cần tìm"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#B3ADAD"
+            android:textSize="20sp"/>
+    </RelativeLayout>
+    <GridView
+        android:id="@+id/gdvListComic"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:numColumns="1"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp">
+
+    </GridView>
+</LinearLayout>

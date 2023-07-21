@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="4dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp">
+        <ImageView
+            android:id="@+id/imgTruyen"
+            android:src="@drawable/fairy_tail"
+            android:scaleType="centerCrop"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+        <TextView
+            android:id="@+id/nameChap"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="#A4131313"
+            android:layout_alignParentBottom="true"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:textSize="16dp"
+            />
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/nameComic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:padding="10dp"
+        android:gravity="center"
+        android:text = "Ten truyen tranh"
+        android:textSize="16dp"
+        android:textColor="#000"/>
+</LinearLayout>

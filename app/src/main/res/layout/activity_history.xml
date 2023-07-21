@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.HistoryActivity">
+
+    <RelativeLayout
+        android:id = "@+id/toolBar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#513619"
+        android:gravity="center">
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="false"
+            android:onClick="update"
+            android:padding = "10dp"
+            android:src = "@drawable/loop"/>
+        <ImageView
+            android:id="@+id/buttonSearch"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:onClick="update"
+            android:padding = "10dp"
+            android:src = "@drawable/search"/>
+        <EditText
+            android:id="@+id/edtSearch"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginRight="80dp"
+            android:background="@drawable/bg_edit"
+            android:gravity="center"
+            android:hint="Nhập tên truyện cần tìm"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#B3ADAD"
+            android:textSize="20sp"/>
+    </RelativeLayout>
+    <TextView
+        android:layout_weight="0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="History"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:padding="10dp"
+        android:textStyle="bold"/>
+    <GridView
+        android:layout_weight="1"
+        android:id="@+id/gdvListComic"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:numColumns="1">
+    </GridView>
+
+</LinearLayout>
